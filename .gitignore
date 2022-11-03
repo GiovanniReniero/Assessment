@@ -1,0 +1,4 @@
+# Ignore the followin files
+.vscode
+node_modules
+dist
