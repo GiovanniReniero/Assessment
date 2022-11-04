@@ -15,3 +15,16 @@ document.addEventListener("click", (event) => {
     dropdown.classList.remove("active");
   });
 });
+
+// TOGGLE MENU
+const toggle_button = document.querySelector(".toggle-button");
+console.log(toggle_button);
+const links = document.querySelectorAll(".link");
+// console.log(links);
+
+toggle_button.addEventListener("click", () => {
+  console.log("Hey Gio!");
+  links.forEach((link) => {
+    link.classList.toggle("active");
+  });
+});
