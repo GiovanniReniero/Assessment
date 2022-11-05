@@ -18,9 +18,7 @@ document.addEventListener("click", (event) => {
 
 // TOGGLE MENU
 const toggle_button = document.querySelector(".toggle-button");
-console.log(toggle_button);
 const links = document.querySelectorAll(".link");
-// console.log(links);
 
 toggle_button.addEventListener("click", () => {
   console.log("Hey Gio!");
@@ -28,3 +26,26 @@ toggle_button.addEventListener("click", () => {
     link.classList.toggle("active");
   });
 });
+
+// Text Spin
+
+const array = [
+  "Competent",
+  "Valuable",
+  "Efficient",
+  "Scalable",
+  "Affordable",
+  "Free",
+  "Reliable",
+];
+// console.log(textSpin.innerHTML);
+
+setInterval(() => {
+  const textSpin = document.querySelector(".text-spin");
+  const cText = textSpin.innerHTML;
+  console.log(cText);
+  const idx = array.indexOf(cText);
+  const nextIdx = (idx + 1) % array.length;
+  console.log(nextIdx);
+  textSpin.innerHTML = array[nextIdx];
+}, 3000);

@@ -165,9 +165,12 @@ i {
   position: absolute;
   width: 40%;
   height: 40%;
-  top: 0;
-  left: 50%;
+  top: 27%;
+  left: 33%;
   z-index: 15;
+}
+.text-spin {
+  color: #0e98d5;
 }
 
 /* $$$$$$$$$$$$$$$$$$Media queries £££££££££££££££££££££££*/
