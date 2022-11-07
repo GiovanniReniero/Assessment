@@ -1,6 +1,7 @@
 .footer_container {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   /* margin: 0 auto; */
+  max-height: fit-content;
   overflow: auto;
   padding: 0 40px;
   background: var(--secondary-color);

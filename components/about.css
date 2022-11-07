@@ -3,6 +3,12 @@
   margin: 0 auto;
 }
 
+.about > h1 {
+  color: darkslategrey;
+  font-weight: bold;
+  margin: 2rem;
+}
+
 .about p {
   color: darkslategrey;
   margin: 3px black solid;
@@ -30,6 +36,38 @@
   padding: 20px;
   margin: 10px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about_wrapper h1 + p {
+  animation-name: slideLeft;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.about_wrapper h1 + p ~ p {
+  animation-name: slideLeft;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes slideRignt {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* Media Queries */

@@ -23,18 +23,9 @@
   </head>
 
   <body>
-    <!-- Bird Assessment Banner-->
-    <!-- <div class="bird d-none d-md-block">
-      <p class="fs-2 text-center">Giovanni Reniero Assessment 4 Bird</p>
-    </div> -->
-
     <!--Navigation-->
     <div class="navibar">
       <a href="#" class="toggle-button mr-4">
-        <!-- <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span> -->
-
         <i class="fa fa-solid fa-bars fa-2x mx-4"></i>
       </a>
 
@@ -46,7 +37,7 @@
           class="compLogo"
         />
         <div class="link">
-          <a href=""><button>Home</button></a>
+          <a href="#"><button>Home</button></a>
         </div>
         <!-- <button class="link" data-dropdown-button>Login</button> -->
         <div class="dropdown" data-dropdown>
@@ -55,8 +46,6 @@
             <div>
               <!-- <div class="dropdown-heading">Free Tutorials</div> -->
               <div class="dropdown-links">
-                <a href="#" class="" text-sm">LLP/Partnerships</a>
-                <a href="#" class="text-sm">Self Employed</a>
                 <a href="#" class="link text-sm">Sole Trader</a>
                 <a href="#" class="link text-sm">Limited Company</a>
               </div>
@@ -82,16 +71,10 @@
         </div>
 
         <div class="dropdown" data-dropdown>
-          <button class="link" data-dropdown-button>Contact</button>
-          <div class="dropdown-menu">
-            <form action="" class="login-form">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
-              <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
-              <button tyoe="submit">Submit</button>
-            </form>
-          </div>
+          <a href="#form">
+            <button class="link" data-dropdown-button>Contact</button>
+          </a>
+          
         </div>
       </div>
     </div>
@@ -102,26 +85,46 @@
         <video autoplay muted loop class="heroVideo">
           <source src="asets/videos/People.mp4" type="video/mp4" />
         </video>
-        <div class="caption text-center">
-          <h1 class="text-xl"><span class="text-6xl font-bold text-spin">Business</span><br>
-            Accounting Services for Essex.</h1>
+       
+        <div class="center-box">
+
+          <div class="caption text-center">
+            <h1 class="text-lg text-center"><span class="text-4xl font-bold text-spin">Business</span><br>
+              Accounting Services for Essex.</h1>
+              
+            <a href="" ><button class="btn_med">Find Out More</button></a>
+              
+          </div>
         </div>
+
+       
       </section>
     </main>
+    <!--Banner-->
+    <section id="banner">
+      <div class="banner">
 
+      </div>
+    </section>
+
+    <!--About-->
     
-    <!--About---->
-    <section>
+    <section id="about">
       <div class="about_wrapper">
         <div class="about">
+          
+          <h1>ASSESSMENT IS AN AWARD WINNING ACCOUNTING & FINANCIAL SERVICE COMPANY</h1>
+          
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            At Assessment Accounting, we offer a wide range of services including tax assistance, commercial financial advice and help with personal finances. In addition, we are outstanding accountants in Essex who also serve the rest of the UK. In fact, we think that no other accountants across the UK can match us for professionalism, high-quality services and the ability to deliver within tight deadlines. As accountants in London and Essex, UK, we are happy to talk to individuals and businesses anywhere in the country about how we can help.</p>
+            <p>
+            An award-winning accountants firm, Assessment Accounting has experience in all sorts of different sectors. We have the know-how to understand exactly what operators in the automotive industry, the property sector and the ecommerce industry require from a top-quality accountant today, to name just three different sectors. We also work with non profit organisations and sole traders to ensure their finances are in good order.
           </p>
 
           <!--Cards-->
           <section class="cards-container">
             <div class="grid">
-              <div class="card flex">
+              <div class="card cardA flex">
                  <i class="fas fa-server fa-3x"></i>
                  <p>
                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde tempora ad ea beatae incidunt nesciunt molestiae, ipsum assumenda, mollitia id delectus, provident fugit dolorum rerum at quod inventore quas tempore.
@@ -137,7 +140,7 @@
                  <i class="fas fa-database fa-3x"></i>
                  <p>
                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                 </p>
+                  </p>
               </div>
               <div class="card flex">
                  <i class="fas fa-power-off fa-3x"></i>
@@ -160,15 +163,40 @@
         
             </div>
           </section>
-        
-
-
         </div>
       </div>
-
     </section>
 
+<!--Form-->
+<section id="form">
+  <div class="form-container text-center">
+    <div class="intro-text">
+       <!-- <h1>Get in Touch!</h1> -->
+       <!-- <p>Let one of our experts tailor an Assessment solution to you very own needs. Are you a company, a sole trader? Are a UK resident or perhaps your company is UK based, let Assessment Accountants find a solution to your Accounting ease.</p> -->
+    </div>
+    <div class="show-form card">
+      <h2 class="text-xl">Submit Your Query</h2>
+      <form action="">
+        <div class="form-control">
+          <input type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-control">
+          <input type="text" name="company" placeholder="Company Name" required>
+        </div>
+        <div class="form-control">
+          <input type="email" name="email" placeholder="you@example.com"  required>
+        </div>
+          <input type="submit" value="Submit" class="btn_med">
+      </form>
+    </div>
+  </div>
+</section> 
 
+
+
+
+
+</section>
 <!--Footer-->
 <footer class="footerWrapper  ">
   <div class="footer_container">
@@ -187,8 +215,8 @@
        <a href="#" class="mx-3"> <i class="fab fa-facebook fa-2x"></i> </a>
        <a href="#" class="mx-3"> <i class="fab fa-instagram fa-2x"></i> </a>
        <a href="#" class="mx-3"> <i class="fab fa-twitter fa-2x"></i> </a>
-     </div>
-  </div>
+      </div>
+    </div>
 </footer>
 
 
