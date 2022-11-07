@@ -30,13 +30,12 @@ toggle_button.addEventListener("click", () => {
 // Text Spin
 
 const array = [
-  "Competent",
-  "Valuable",
-  "Efficient",
+  "Business",
+  "Corporate",
+  "Tailored",
   "Scalable",
   "Affordable",
-  "Free",
-  "Reliable",
+  "Effective",
 ];
 // console.log(textSpin.innerHTML);
 

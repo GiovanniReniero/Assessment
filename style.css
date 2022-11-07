@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
 /* font-family: 'Montserrat', sans-serif; */
 
-:root *:before,
+@import url("components/footer.css");
+@import url("components/about.css");
+
+*:before,
 *:after,
 * {
   box-sizing: border-box;
@@ -10,9 +12,21 @@
   padding: 0;
 }
 
+:root {
+  --primary-color: #0e98d5;
+
+  --secondary-color: #0d679e;
+  --dark-color: #353689;
+  --white-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
 html,
 body {
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 body {
@@ -36,9 +50,10 @@ body {
   display: none;
   background: none;
   border: none;
+  color: #0e98d5;
   /* height: inherit; */
   text-decoration: none;
-  color: #0e98d5;
+  color: --var;
   font-family: inherit;
   font-weight: bold;
   font-size: inherit;
@@ -136,7 +151,7 @@ body {
 }
 
 i {
-  color: #0e98d5;
+  color: var(--primary-color);
 }
 
 .hero {
